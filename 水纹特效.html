@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>水纹特效</title>
+        <meta charset="ust-8" />
+        <style>
+            body{
+                height: 100vh;
+                overflow: hidden;
+                background:linear-gradient(to right, rgb(198, 127, 127) 0%,#cfc7f8 100%);
+                display: flex;
+            }
+            div{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background-color:aquamarine;
+                margin: auto;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            div::after{
+                content: '';
+                position: absolute;
+               
+                background-color: white;
+                height: 200px;
+                width: 200px;
+               top: -100px;
+                border-radius: 45%;
+                animation:move 3s linear infinite;
+                
+
+            }
+            @keyframes move{
+                100%{
+                    transform: rotate(360deg) ;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
