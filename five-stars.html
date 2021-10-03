@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五星红旗</title>
+    <style>
+        #main{
+            /* border: 1px solid red; */
+            width: 450px;
+            height: 300px;
+            background:linear-gradient(to right ,red 0%,white 100%);
+            position: relative;
+            z-index: -1;
+            /* border: 1px solid red; */
+        }
+        *{
+            float: left;
+        }
+        #star{
+            display: block;
+            margin: auto;
+            position: relative;
+            width: 0;
+            height: 0;
+            margin: 100px 0px;
+            color: #ffff00;
+            border-left: 100px solid transparent;
+            border-right: 100px  solid transparent;
+            border-bottom: 70px solid #ffff00;
+            -webkit-transform: rotate(35deg);
+        }
+        #star::before{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -45px;
+            left: -65px;
+           
+            
+            display: block;
+           border-left: 30px solid transparent;
+            border-right: 30px  solid transparent;
+            border-bottom: 80px solid #ffff00;
+            -webkit-transform: rotate(-35deg);
+           
+        }
+        #star::after{
+            content: '';
+            position: absolute;
+
+            display: block;
+
+            color: #ffff00;
+
+            top: 3px;
+
+            left: -105px;
+
+            width: 0px;
+
+            height: 0px;
+
+            border-right: 100px solid transparent;
+
+            border-bottom: 70px solid #ffff00;
+
+            border-left: 100px solid transparent;
+            -webkit-transform: rotate(-70deg);
+
+        }
+
+        .starm{
+            display: block;
+            margin: auto;
+            position: absolute;
+            width: 0;
+            height: 0;
+            margin: 100px 0px;
+            color: #ffff00;
+            border-left: 33.3px solid transparent;
+            border-right: 33.3px  solid transparent;
+            border-bottom: 23.3px solid #ffff00;
+            -webkit-transform: rotate(35deg);
+        }
+        .starm::before{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -15px;
+            left: -21.6px;
+           
+            
+            display: block;
+           border-left: 10px solid transparent;
+            border-right: 10px  solid transparent;
+            border-bottom: 26.6px solid #ffff00;
+            -webkit-transform: rotate(-35deg);
+           
+        }
+        .starm::after{
+            content: '';
+            position: absolute;
+
+            display: block;
+
+            color: #ffff00;
+
+            top: 1px;
+
+            left: -35px;
+
+            width: 0px;
+
+            height: 0px;
+
+            border-right: 33.3px solid transparent;
+
+            border-bottom: 26.6px solid #ffff00;
+
+            border-left: 33.3px solid transparent;
+            -webkit-transform: rotate(-70deg);
+
+        }
+        .two{
+            /* background: palevioletred; */
+            left: 330px;
+            /* top: -10px; */
+            transform:rotate(-60.96deg);
+        }
+        .one{
+            /* background: paleturquoise; */
+            top:-70px;
+            left:230.49px;
+            transform:rotate(-10.13deg);
+     
+        }
+        .three{
+            /* background: orangered; */
+            top:130px;
+            left:230px;
+            transform:rotate(60deg);
+            
+        }
+        .four{
+            /* background:orange; */
+            top:86.91px;
+            left:330.49px;
+            transform:rotate(35deg);  
+        }
+        .text{
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="star" class="big"></div>
+        <div class="starm one"></div>
+        <div class="starm two"></div>
+        <div class="starm three"></div>
+        <div class="starm four"></div>
+
+    </div>
+    <!-- <div class="text">
+        <p>第三周上了四天课</p><br/>
+        <p>到目前看完了js基础</p><br/>
+        <p>在食堂干了很多饭</p><br/>
+        <p>空余时间也有玩游戏</p><br/>
+        <p>感觉基本都不怎么听老师讲，全都自己学</p><br/>
+    </div> -->
+</body>
+</html>
